@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Open-Source Summit '25 Ticket</title>
+    <style>
+      body {
+        background: radial-gradient(
+            circle at top left,
+            rgba(114, 22, 55, 0.3) 0%,
+            transparent 40%
+          ),
+          radial-gradient(
+            circle at bottom right,
+            rgba(114, 22, 55, 0.3) 0%,
+            transparent 40%
+          ),
+          #0c0618;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        font-family: "Montserrat", Arial, sans-serif;
+      }
+      .ticket {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        color: #fff;
+        width: 800px;
+        height: 280px;
+        overflow: hidden;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+      }
+      .qr-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 260px;
+        min-width: 260px;
+        border-right: 2px solid #444;
+        padding: 0 24px;
+      }
+      .qr-section img {
+        background: #fff;
+        border-radius: 8px;
+        width: 230px;
+        height: 230px;
+        object-fit: contain;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+      }
+      .details-section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 32px 32px 32px 32px;
+        position: relative;
+      }
+      .event-title {
+        font-size: 2.2em;
+        font-weight: 700;
+        margin-bottom: 8px;
+        letter-spacing: 1px;
+        color: #f1f1f1;
+        font-family: "Ubuntu", sans-serif;
+      }
+      .event-title .year {
+        color: #a7c7f9;
+        font-size: 1.1em;
+        font-weight: 800;
+        filter: drop-shadow(1px 1px 3px #232323);
+        font-family: "Ubuntu", sans-serif;
+      }
+      .event-date {
+        font-size: 1.2em;
+        margin-bottom: 8px;
+        margin-top: 16px;
+        letter-spacing: 1px;
+        color: #d1d1d1;
+      }
+      .event-time {
+        font-size: 1.1em;
+        margin-bottom: 18px;
+        color: #b0b0b0;
+      }
+      .participant {
+        font-size: 1.3em;
+        font-weight: 700;
+        margin-top: 18px;
+        margin-bottom: 10px;
+        color: #fff;
+      }
+      .dev-section {
+        border-left: 2px solid #444;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        min-width: 80px;
+        position: relative;
+      }
+      .foss-logo {
+        width: 60px;
+        height: 90px;
+        background: transparent;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        object-fit: contain;
+      }
+      .summit-logo{
+      width: 260px;
+      height: 200px;
+      background: transparent;
+      margin-bottom: 14px;
+      margin-top: 10px;
+      object-fit: contain;
+      }
+      .vertical-text {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        font-size: 1em;
+        color: #eee;
+        font-weight: 500;
+        letter-spacing: 2px;
+        margin-top: 10px;
+        text-align: center;
+      }
+      .faculty {
+        font-size: 0.9em;
+        color: #ccc;
+        margin-top: 12px;
+        line-height: 1.2;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        text-align: center;
+      }
+      .event-name {
+        font-size: 0.9em;
+        font-weight: 500;
+        margin-top: 2px;
+        color: #b0b0b0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ticket">
+      <div class="qr-section">
+        <img src="{qr_code}" alt="QR Code" />
+      </div>
+      <div class="details-section">
+        <div class="event-title">Open Dev Summit <span class="year">'25</span></div>
+        <!-- <img src="../assets/summit.png" class="summit-logo" alt="Foss Logo"> -->
+        <div class="event-name">Workshop 1: Linux Fundamentals</div>
+        <div class="event-date">26 APRIL 2025</div>
+        <div class="">9 AM</div>
+
+        <div class="participant">{name}</div>
+      </div>
+      <div class="dev-section">
+        <div class="vertical-text">Open Dev Summit '25</div>
+        <img src="../assets/fosslogo.png" class="foss-logo" alt="Foss Logo" />
+      </div>
+      <div class="dev-section">
+        <div class="faculty">
+          Faculty of Computing and Technology<br />University of Kelaniya
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

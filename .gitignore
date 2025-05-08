@@ -1,0 +1,5 @@
+.venv
+chrome-win
+.env
+__pycache__/
+app.log
