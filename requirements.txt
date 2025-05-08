@@ -1,0 +1,12 @@
+qrcode
+pandas
+pillow
+html2image
+python-dotenv
+pyyaml
+bcrypt
+python-multipart
+SQLAlchemy
+supabase
+itsdangerous
+psycopg2-binary==2.9.10
