@@ -60,7 +60,7 @@ Before running the project, ensure you have the following installed:
 
 5. **Set Up the Database**:Ensure your PostgreSQL database is running and the required tables (`participants`, `events`, etc.) are created.
 
-6. **Unzip the downloaded chrome binaries in to the project root**
+6. **Unzip the downloaded chrome binaries in to the project root**: [Download from here ⬇️](https://drive.google.com/drive/folders/1NkBMQMXUH4MYmXoTGKL73heSGs9G37qo?usp=sharing)
 
 ## Usage
 
