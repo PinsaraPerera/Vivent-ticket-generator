@@ -54,8 +54,6 @@ Before running the project, ensure you have the following installed:
     DB_USER=your_database_user
     DB_PASSWORD=your_database_password
     DB_NAME=your_database_name
-    SUPABASE_URL=your_supabase_url
-    SUPABASE_KEY=your_supabase_key
     CLIENT_ID=your_sirv_client_id
     CLIENT_SECRET=your_sirv_client_secret
     ```

@@ -8,6 +8,7 @@ import qrcode
 import base64
 from io import BytesIO
 from generator.upload_tickets import upload_file
+from db.config import SRV_BASE_URL
 
 
 hti = Html2Image(output_path='tickets', browser_executable='chrome-win/chrome.exe')
@@ -254,7 +255,7 @@ def update_participant_ticket_link(event_id: int, db: Session):
                 upload_response = upload_file(ticket_path)
                 if upload_response:
                     # Construct the public URL for the uploaded ticket
-                    ticket_link = f"https://mp3domain.sirv.com/summit_25/{participant.ticketId}.png"
+                    ticket_link = f"{SRV_BASE_URL}/{participant.ticketId}.png"
                     participant.ticket_link = ticket_link
                     db.commit()
                     logger.info(f"Updated ticket link for {participant.firstName} {participant.lastName}")
