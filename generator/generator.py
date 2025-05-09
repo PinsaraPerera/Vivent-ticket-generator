@@ -14,7 +14,6 @@ from db.config import SRV_BASE_URL
 hti = Html2Image(output_path='tickets', browser_executable='chrome-win/chrome.exe')
 
 qr_content = "https://fossuok.org/events/15"
-base_url = "https://mp3domain.sirv.com/summit_25/"
 
 template_1 = """
 <body>
